@@ -14,3 +14,52 @@
 .active {
     background-color: orange;
 }
+
+
+
+.coctail-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    margin: 10px 60px;
+
+}
+
+.coctail {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 2px 2px 16px gray;
+    ;
+}
+
+.coctail img {
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btn-show-details {
+    padding: 10px 60px;
+    box-shadow: 1px 1px 4px gray;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .coctail-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 100px;
+        margin: 20px 60px;
+    }
+
+}
