@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './common.css'
 const Header = () => {
     return (
         <div className='header'>
-            <Link  to='/home'>Home</Link>
-            <Link to='/coctails'>Coctails</Link>
-            <Link to='/about'>About</Link>
+            <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/home'>Home</NavLink>
+            <NavLink to='/coctails'>Coctails</NavLink>
+            <NavLink to='/about'>About</NavLink>
         </div>
     );
 };
